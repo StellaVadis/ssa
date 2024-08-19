@@ -1,5 +1,7 @@
 # Model Structure 
 
+dwq
+
 $$
 \begin{align}
 d^{[i]} &= \left(x - x^{[i]}\right)^2, i = 1,2,\cdots, n \\
@@ -9,6 +11,7 @@ M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum
 \end{align}
 $$
 
+dqw
 where:
 \begin{itemize}
     \item \( d \) is the distance between \( x \) and \( X \)
