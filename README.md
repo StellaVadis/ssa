@@ -20,7 +20,7 @@ Find a model $M(\cdot)$ such that:
 
 
 
-<span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 3px;">
+<span style="background-color: #d3a1d9; padding: 2px 4px; border-radius: 3px;">
   
 $$ 
 \begin{align}
@@ -29,9 +29,6 @@ $$
 $$
   
 </span>
-
-
-
 
 
 - Mean Squared Error (MSE):
