@@ -1,4 +1,6 @@
-# ssa
+# Regression Task
+
+A regression task is a type of problem in machine learning and statistics where the goal is to predict a continuous output value based on input data. 
 
 |     |  $x_1$   |  $x_2$   |  $x_3$   |  ...  |  $x_d$   | $y$  |
 |-----|:------------:|:------------:|:------------:|:-----:|:------------:|:--------:|
