@@ -13,6 +13,9 @@ A regression task is a type of problem in machine learning and statistics where 
 | [n] |  $x_1^{[n]}$ |  $x_2^{[n]}$ |  $x_3^{[n]}$ |  ...  |  $x_d^{[n]}$ | $y^{[n]}$ |
 
 ## Evaluation Metrics
+
+Find a model $M(\cdot)$ such that:
+
 - Mean Absolute Error (MAE):
 
 $$
