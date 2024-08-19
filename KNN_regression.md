@@ -5,7 +5,9 @@ dwq
 
 $$
 \begin{align}
-d^{[i]} 
+d^{[i]} &= \left(x - x^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
+d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
+\delta &= \text{rank}_3(d) \\
 \end{align}
 $$
 
