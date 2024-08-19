@@ -40,13 +40,19 @@ $$
 \end{align}
 $$
 
-5. R-squared (\(R^2\)):
+- R-squared (\(R^2\)):
+
+$$
 \begin{align}
 & \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y^{[i]} \\
 \text{maximize} \quad & R^2 = 1 - \frac{\sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}{\sum_{i=1}^{n} \left( y^{[i]} - \bar{y} \right)^2}
 \end{align}
+$$
 
-6. Adjusted R-squared (\(R^2_{adj}\)):
+- Adjusted R-squared (\(R^2_{adj}\)):
+
+$$
 \begin{align}
 \text{maximize} \quad R^2_{adj} = 1 - \left(1 - R^2\right) \times \frac{n - 1}{n - d - 1}
 \end{align}
+$$
