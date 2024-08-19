@@ -54,6 +54,7 @@ $$
 
 ## Models and Fitting
 💻 K-Nearest Neighbors
+
 💻 Linear Regression
 - OLS
 - dwi
