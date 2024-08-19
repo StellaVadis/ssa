@@ -1,7 +1,9 @@
-# Regression Task
+# Regression
 
+## Task Description
 A regression task is a type of problem in machine learning and statistics where the goal is to predict a continuous output value based on input data. 
 
+## Dataset
 |     |  $x_1$   |  $x_2$   |  $x_3$   |  ...  |  $x_d$   | $y$  |
 |-----|:------------:|:------------:|:------------:|:-----:|:------------:|:--------:|
 | [1] |  $x_1^{[1]}$ |  $x_2^{[1]}$ |  $x_3^{[1]}$ |  ...  |  $x_d^{[1]}$ | $y^{[1]}$ |
