@@ -14,6 +14,7 @@ A regression task is a type of problem in machine learning and statistics where 
 
 ## Evaluation Metrics
 1. Mean Absolute Error (MAE):
+
 $$
 \begin{align}
 \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
