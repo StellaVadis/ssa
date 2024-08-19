@@ -21,15 +21,21 @@ $$
 \end{align}
 $$
 
-2. Mean Squared Error (MSE):
+- Mean Squared Error (MSE):
+
+$$
 \begin{align}
 \text{minimize} \quad \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2
 \end{align}
+$$
 
-4. Root Mean Squared Error (RMSE):
+- Root Mean Squared Error (RMSE):
+
+$$
 \begin{align}
 \text{minimize} \quad \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}
 \end{align}
+$$
 
 5. R-squared (\(R^2\)):
 \begin{align}
