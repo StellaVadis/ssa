@@ -1,7 +1,13 @@
 # Tasks
-📋
+📋 Regression
 
-# Topics
+📋 Classification
+
+📋 Image Segmentation
+
+📋 Survival Analysis
+
+# Topics 
 ## Models and Fitting
 
 ## Model Selection
