@@ -41,10 +41,10 @@ Then we should select the hyperparameters $K = 2$ and uses Eucleadin Distance $\
 
 $$
 \begin{align}
-d^{[i]} &= \left(x_1 - x_1^{[i]}\right)^2 +  \left(x_2 - x_2^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
-d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
+d^{[i]} &= \left(x_1 - x_1^{[i]}\right)^2 +  \left(x_2 - x_2^{[i]}\right)^2, \quad i = 1,2,3, 4 \\
+d &= \left[d^{[1]}, d^{[2]}, d^{[3]}, d^{[4]}\right]^T \\
 \delta &= \text{rank}\_2(d) \\
-M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
+M(x) &= \frac{\sum_{i=1}^{4} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{4} \mathbb{I}(d^{[i]} \leq \delta)}
 \end{align}
 $$
 
