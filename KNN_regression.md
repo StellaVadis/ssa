@@ -1,7 +1,4 @@
-# Model Structure 
-
-dwq
-
+The main idea of the KNN algorithm is seen as follows:
 
 $$
 \begin{align}
@@ -12,15 +9,15 @@ M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum
 \end{align}
 $$
 
-
-dqw
 where:
-\begin{itemize}
-    \item \( d \) is the distance between \( x \) and \( X \)
-    \item \(\delta\) is the distance threshold based on the 3rd ranked distance
-    \item \(\mathbb{I}(\cdot)\) is the indicator function, which is 1 if the condition inside is true, and 0 otherwise
-    \item \( Y^{[i]} \) are the response values corresponding to the \( i \)-th nearest neighbors
-\end{itemize}
+$$
+\begin{aligned}
+&\bullet \quad d \text{ is the distance between } x \text{ and } X \\
+&\bullet \quad \delta \text{ is the distance threshold based on the 3rd ranked distance} \\
+&\bullet \quad \mathbb{I}(\cdot) \text{ is the indicator function, which is 1 if the condition inside is true, and 0 otherwise} \\
+&\bullet \quad Y^{[i]} \text{ are the response values corresponding to the } i\text{-th nearest neighbors}
+\end{aligned}
+$$
 
 # Training Algorithm
 This model does not contain parameters to be trained.
