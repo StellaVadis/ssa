@@ -17,7 +17,7 @@ where:
 
 We want to design such a model that can compute the predicted features with the available features in dataset and make a prediction based on the voting system. 
 
-However, the $d$ and $k$ are hyperparameters which should be specified by the users. By specifying an appropriate $d$ and $k$, the users may get an implicit model expression. In the real application, we may use the cross-validation technique to find appropriate hyperparameters which optimizes the performance of models, which will not be discussed here.
+However, the $d$ and $K$ are hyperparameters which should be specified by the users. By specifying an appropriate $d$ and $K$, the users may get an implicit model expression. In the real application, we may use the cross-validation technique to find appropriate hyperparameters which optimizes the performance of models, which will not be discussed here.
 
 # 🔍 Example 1
 
@@ -59,4 +59,4 @@ Available Dataset
 
 To train a KNN model based on the available dataset, we should consider splitting the dataset randomly into a training set with 4 samples and a test set with 2 samples. For simplicity, let us assume that the $[1],[2],[3],[4]$ are in the training set, while $[4],[5]$ are in the test set.
 
-Therefore, the KNN model is very useful. 
+Then we should select the hyperparameters $K = 2$ and uses Eucleadin Distance $\|x - x'\|$.
