@@ -17,12 +17,20 @@ A regression task is a type of problem in machine learning and statistics where 
 Find a model $M(\cdot)$ such that:
 
 - Mean Absolute Error (MAE):
+- 
+<pre style="background-color: #f0f0f0; padding: 10px;">
+<code>
 
 $$ 
 \begin{align}
 \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
 \end{align}
 $$
+  
+</code>
+</pre>
+
+
 
 
 
