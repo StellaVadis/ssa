@@ -8,7 +8,7 @@ $$
 d^{[i]} &= \left(x - x^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
 d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
 \delta &= \text{rank}_3(d) \\
-M(x) &= \frac{1}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
+M(x) &= \frac{1}{2}
 \end{align}
 $$
 
