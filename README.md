@@ -40,7 +40,7 @@ $$
 \end{align}
 $$
 
-- R-squared (\(R^2\)):
+- R-squared $$(R^2)$$:
 
 $$
 \begin{align}
