@@ -11,3 +11,5 @@ A regression task is a type of problem in machine learning and statistics where 
 | [3] |  $x_1^{[3]}$ |  $x_2^{[3]}$ |  $x_3^{[3]}$ |  ...  |  $x_d^{[3]}$ | $y^{[3]}$ |
 | ... |      ...      |      ...      |      ...      |  ...  |      ...      |    ...   |
 | [n] |  $x_1^{[n]}$ |  $x_2^{[n]}$ |  $x_3^{[n]}$ |  ...  |  $x_d^{[n]}$ | $y^{[n]}$ |
+
+## Mathematical Objective (Evaluation Metrics)
