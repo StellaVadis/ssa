@@ -44,7 +44,7 @@ $$
 d^{[i]} &= \left(x_1 - x_1^{[i]}\right)^2 +  \left(x_2 - x_2^{[i]}\right)^2, \quad i = 1,2,3, 4 \\
 d &= \left[d^{[1]}, d^{[2]}, d^{[3]}, d^{[4]}\right]^T \\
 \delta &= \text{rank}\_2(d) \\
-M(x) &= \frac{\sum_{i=1}^{4} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{4} \mathbb{I}(d^{[i]} \leq \delta)}
+M(x) &= \frac{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right) \cdot y^{[i]}}{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right)}
 \end{align}
 $$
 
