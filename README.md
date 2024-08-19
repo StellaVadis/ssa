@@ -56,5 +56,5 @@ $$
 💻 K-Nearest Neighbors
 
 💻 Linear Regression
-- OLS
-- dwi
+- Ordinary Least Square Fit by Closed-form Solution
+- Ordinary Least Square Fit by Gradient Descent
