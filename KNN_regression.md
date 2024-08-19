@@ -21,9 +21,9 @@ However, the $d$ and $K$ are hyperparameters which should be specified by the us
 
 # 🔍 Example 1
 
-Population Dataset: Invisible
+📊 Population Dataset: Invisible
 
-Available Dataset
+📊 Available Dataset
 |     |   $x_1$   |   $x_2$   |   $y$   |
 |-----|:---------:|:---------:|:-------:|
 | [1] |     2     |     3     |    1    |
