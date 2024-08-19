@@ -13,7 +13,7 @@ A regression task is a type of problem in machine learning and statistics where 
 | [n] |  $x_1^{[n]}$ |  $x_2^{[n]}$ |  $x_3^{[n]}$ |  ...  |  $x_d^{[n]}$ | $y^{[n]}$ |
 
 ## Evaluation Metrics
-1. Mean Absolute Error (MAE):
+- Mean Absolute Error (MAE):
 
 $$
 \begin{align}
@@ -21,7 +21,7 @@ $$
 \end{align}
 $$
 
-3. Mean Squared Error (MSE):
+2. Mean Squared Error (MSE):
 \begin{align}
 \text{minimize} \quad \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2
 \end{align}
