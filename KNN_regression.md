@@ -21,36 +21,42 @@ However, the $d$ and $k$ are hyperparameters which should be specified by the us
 
 # 🔍 Example 1
 
-Population Dataset
+Population Dataset (Invisible to Users)
 |     |   $x_1$   |   $x_2$   |   $y$   |
 |-----|:---------:|:---------:|:-------:|
 | [1] |     2     |     3     |    1    |
-| [2] |     5     |     4     |    0    |
-| [3] |     9     |     6     |    1    |
-| [4] |     4     |     7     |    1    |
-| [5] |     8     |     1     |    0    |
-| [6] |     7     |     2     |    1    |
+| [2] |     5     |     4     |    2    |
+| [3] |     9     |     6     |    3    |
+| [4] |     4     |     7     |    4    |
+| [5] |     8     |     1     |    1    |
+| [6] |     7     |     2     |    0    |
 | [7] |     6     |     4     |    0    |
 | [8] |     4     |     2     |    1    |
-| [9] |     5     |     7     |    0    |
+| [9] |     5     |     7     |    2    |
 | [10] |    6     |     5     |    1    |
-| [11] |    7     |     3     |    1    |
-| [12] |    3     |     8     |    0    |
-| [13] |    2     |     5     |    1    |
-| [14] |    8     |     4     |    0    |
+| [11] |    7     |     3     |    4    |
+| [12] |    3     |     8     |    6    |
+| [13] |    2     |     5     |    7    |
+| [14] |    8     |     4     |    2    |
 | [15] |    6     |     7     |    1    |
 | [16] |    1     |     3     |    0    |
-| [17] |    9     |     5     |    1    |
-| [18] |    3     |     2     |    0    |
-| [19] |    7     |     6     |    1    |
-| [20] |    4     |     1     |    0    |
+| [17] |    9     |     5     |    0    |
+| [18] |    3     |     2     |    1    |
+| [19] |    7     |     6     |    2    |
+| [20] |    4     |     1     |    4    |
 
 Available Dataset
 |     |   $x_1$   |   $x_2$   |   $y$   |
 |-----|:---------:|:---------:|:-------:|
 | [1] |     2     |     3     |    1    |
-| [2] |     5     |     4     |    0    |
-| [3] |     9     |     6     |    1    |
-| [4] |     4     |     7     |    1    |
-| [5] |     8     |     1     |    0    |
-| [6] |     7     |     2     |    1    |
+| [2] |     5     |     4     |    2    |
+| [3] |     9     |     6     |    3    |
+| [4] |     4     |     7     |    4    |
+| [5] |     8     |     1     |    1    |
+| [6] |     7     |     2     |    0    |
+
+🔑 Solution
+
+To train a KNN model based on the available dataset, we should consider splitting the dataset randomly into a training set with 4 samples and a test set with 2 samples. For simplicity, let us assume that the $[1],[2],[3],[4]$ are in the training set, while $[4],[5]$ are in the test set.
+
+Therefore, the KNN model is very useful. 
