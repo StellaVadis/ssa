@@ -59,4 +59,4 @@ Available Dataset
 
 To train a KNN model based on the available dataset, we should consider splitting the dataset randomly into a training set with 4 samples and a test set with 2 samples. For simplicity, let us assume that the $[1],[2],[3],[4]$ are in the training set, while $[4],[5]$ are in the test set.
 
-Then we should select the hyperparameters $K = 2$ and uses Eucleadin Distance $\|x - x'\|$.
+Then we should select the hyperparameters $K = 2$ and uses Eucleadin Distance $\||x - x'\||$.
