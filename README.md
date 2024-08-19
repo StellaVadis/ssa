@@ -1,5 +1,5 @@
 # Tasks
-📋 Regression
+📋 [Regression](https://github.com/StellaVadis/ssa/blob/main/Regression.md)
 
 📋 Classification
 
