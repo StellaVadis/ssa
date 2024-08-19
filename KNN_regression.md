@@ -33,7 +33,7 @@ However, the $d$ and $K$ are hyperparameters which should be specified by the us
 | [5] |     8     |     1     |    1    |
 | [6] |     7     |     2     |    0    |
 
-🔑 Solution
+🔑 Model Construction
 
 To train a KNN model based on the available dataset, we should consider splitting the dataset randomly into a training set with 4 samples and a test set with 2 samples. For simplicity, let us assume that the $[1],[2],[3],[4]$ are in the training set, while $[4],[5]$ are in the test set.
 
@@ -47,4 +47,6 @@ d &= \left[d^{[1]}, d^{[2]}, d^{[3]}, d^{[4]}\right]^T \\
 M(x) &= \frac{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right) \cdot y^{[i]}}{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right)}
 \end{align}
 $$
+
+🔮 Model Inference
 
