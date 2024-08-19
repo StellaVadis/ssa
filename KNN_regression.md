@@ -5,10 +5,7 @@ dwq
 
 $$
 \begin{align}
-d^{[i]} &= \left(x - x^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
-d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
-\delta &= \text{rank}_3(d) \\
-M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
+d^{[i]} 
 \end{align}
 $$
 
