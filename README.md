@@ -51,11 +51,3 @@ $$
 $$
 
    💡 The $$R^2$$ metric is a useful measure of the goodness of fit for your model. The numerator represents the Mean Squared Error (MSE) of your model's predictions, while the denominator represents the MSE when all predictions are simply the mean value of $y$ (the simplest possible model). Essentially, $$R^2$$ indicates how much better your model performs compared to this baseline model that only predicts the mean.
-
-- Adjusted R-squared (\(R^2_{adj}\)):
-
-$$
-\begin{align}
-\text{maximize} \quad R^2_{adj} = 1 - \left(1 - R^2\right) \times \frac{n - 1}{n - d - 1}
-\end{align}
-$$
