@@ -20,7 +20,7 @@ Find a model $M(\cdot)$ such that:
 
 $$ 
 \begin{align}
-🔢 \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
+\text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
 \end{align}
 $$
 
@@ -49,6 +49,8 @@ $$
 \text{maximize} \quad & R^2 = 1 - \frac{\sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}{\sum_{i=1}^{n} \left( y^{[i]} - \bar{y} \right)^2}
 \end{align}
 $$
+
+💡The $$\left(R^2\right)$$ is relatively important
 
 - Adjusted R-squared (\(R^2_{adj}\)):
 
