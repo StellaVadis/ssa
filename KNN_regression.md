@@ -1,5 +1,3 @@
-# Model Construction
-
 The main idea of the KNN algorithm is seen as follows:
 
 $$
@@ -21,4 +19,3 @@ We want to design such a model that can compute the predicted features with the 
 
 However, the $d$ and $k$ are hyperparameters which should be specified by the users. By specifying an appropriate $d$ and $k$, the users may get an implicit model expression. In the real application, we may use the cross-validation technique to find appropriate hyperparameters which optimizes the performance of models, which will not be discussed here.
 
-# Model Inference
