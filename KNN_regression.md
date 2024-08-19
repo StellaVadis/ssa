@@ -10,14 +10,11 @@ M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum
 $$
 
 where:
-$$
-\begin{aligned}
-&\bullet \quad d \text{ is the distance between } x \text{ and } X \\
-&\bullet \quad \delta \text{ is the distance threshold based on the 3rd ranked distance} \\
-&\bullet \quad \mathbb{I}(\cdot) \text{ is the indicator function, which is 1 if the condition inside is true, and 0 otherwise} \\
-&\bullet \quad Y^{[i]} \text{ are the response values corresponding to the } i\text{-th nearest neighbors}
-\end{aligned}
-$$
+- $d$ is the distance between $x$ and $x^{[i]}$
+- $\delta$ is the distance threshold 
+- $\mathbb{I}(\cdot)$ is the indicator function, which is 1 if the condition inside is true, and 0 otherwise
+- $y^{[i]}$ are the response values corresponding to the $i$-th nearest neighbors
+
 
 # Training Algorithm
 This model does not contain parameters to be trained.
