@@ -18,13 +18,43 @@ Find a model $M(\cdot)$ such that:
 
 - Mean Absolute Error (MAE):
 
-```
-$$
-\begin{align}
-\text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
-\end{align}
-$$
-```
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathJax Example with Background Color</title>
+    <style>
+        .math-container {
+            background-color: #f0f0f0; /* 浅灰色背景 */
+            padding: 10px; /* 内边距 */
+            border-radius: 5px; /* 边角圆润 */
+            overflow: auto; /* 确保公式内容不会溢出 */
+            margin: 20px 0; /* 外边距 */
+        }
+        .math-container pre {
+            margin: 0; /* 去掉pre标签的默认外边距 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="math-container">
+    $$ 
+    \begin{align}
+    \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
+    \end{align}
+    $$
+</div>
+
+<!-- MathJax Script -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
+
 
 - Mean Squared Error (MSE):
 
