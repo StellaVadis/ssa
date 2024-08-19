@@ -20,15 +20,14 @@ Find a model $M(\cdot)$ such that:
 
 
 
-<span style="background-color: #d3a1d9; padding: 2px 4px; border-radius: 3px;">
+
   
-$$ 
+> $$ 
 \begin{align}
 \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
 \end{align}
 $$
-  
-</span>
+
 
 
 - Mean Squared Error (MSE):
