@@ -21,9 +21,9 @@ Find a model $M(\cdot)$ such that:
 
 
 
-🚀 $$ 
+$$ 
 \begin{align}
-\text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
+🚀 \text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
 \end{align}
 $$
 
