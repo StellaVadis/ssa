@@ -2,20 +2,16 @@
 
 dwq
 
-$$ 
-\begin{align}
-\text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
-\end{align}
-$$
 
 $$
 \begin{align}
-d^{[i]} &= \left(x - x^{[i]}\right)^2, i = 1,2,\cdots, n \\
-d &= \left[d^{[1]},d^{[2]},\cdots,d^{[m]}\right]^T \\
+d^{[i]} &= \left(x - x^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
+d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
 \delta &= \text{rank}_3(d) \\
 M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
 \end{align}
 $$
+
 
 dqw
 where:
