@@ -69,6 +69,10 @@ Linear Regression:
 
 ## All combination Examples
 
+💻 [Data Unprocessed, K-Nearest Neighbors (Regression)]
+
+💻 [Data Unprocessed, K-Nearest Neighbors (Regression)]
+
 💻 [Data Standardization, K-Nearest Neighbors (Regression)]
 
 💻 [Data Normalization, K-Nearest Neighbors (Regression)]
