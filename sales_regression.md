@@ -41,7 +41,7 @@ Find a model $M(\cdot)$ such that:
   </thead>
   <tbody>
     <tr>
-      <td>Model 1</td>
+      <td>Linear Regression</td>
       <td></td>
       <td></td>
       <td></td>
