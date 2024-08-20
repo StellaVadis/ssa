@@ -1,3 +1,5 @@
+<h1 align="center">K-Nearest Neighbors (Regression)</h1>
+
 The main idea of the KNN algorithm is seen as follows:
 
 $$
