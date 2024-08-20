@@ -2,9 +2,9 @@ The main idea is to optimize the mean square error between the prediction and th
 
 We aim to minimize the following objective function:
 
-\[
+$$
 \text{Minimize} \quad J(\beta_0, \beta_1, \dots, \beta_n) = \sum_{i = 1}^{n} \left( y^{[i]} - \left( \beta_0 + \sum_{j = 1}^{p} \beta_j x_j^{[i]} \right) \right)^2
-\]
+$$
 
 1. Matrix Form Representation
 
