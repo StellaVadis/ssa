@@ -4,7 +4,7 @@ $$
 \begin{align}
 d^{[i]} &= \left(x - x^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
 d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[m]}\right]^T \\
-\delta &= \text{rank}\_k(d) \\
+\delta &= \text{min}\_k(d) \\
 M(x) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
 \end{align}
 $$
@@ -73,6 +73,14 @@ Then, we can compute that the threshold for [5]:
 
 $$
 \begin{align}
-\delta^{[5]} = rank\_3 \left( \left[40,18,26,52 \right]^T \right)
+\delta^{[5]} = \text{min}_2 \left( \left[40,18,26,52 \right]^T \right) = 26 
+\end{align}
+$$
+
+Therefore, the prediction value of [5] is:
+
+$$
+\begin{align}
+M(x^{[5]}) = \frac{0 \times 1 + 1 \times 2 + 1 \times 3 + 0 \times 4}{0 + 1 + 1 + 0} = 2.5
 \end{align}
 $$
