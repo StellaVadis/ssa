@@ -52,6 +52,9 @@ $$
 
    💡 The $$R^2$$ metric is a useful measure of the goodness of fit for your model. The numerator represents the Mean Squared Error (MSE) of your model's predictions, while the denominator represents the MSE when all predictions are simply the mean value of $y$ (the simplest possible model). Essentially, $$R^2$$ indicates how much better your model performs compared to this baseline model that only predicts the mean.
 
+## Data Processing
+Standardizing
+
 ## Models and Fitting
 
 Non-parametric Model:
@@ -64,3 +67,8 @@ Linear Regression:
 
 💻 [Ordinary Least Square Fit (Gradient Descent)](https://example.com/ordinary-least-squares-gradient-descent)
 
+## All combination Examples
+
+💻 [Data Standardization, K-Nearest Neighbors (Regression)]
+
+💻 [Data Normalization, K-Nearest Neighbors (Regression)]
