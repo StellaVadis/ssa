@@ -1,3 +1,6 @@
+<h1 align="center">Ordinary Least Sqaure Fit (Closed-form Solution)</h1>
+
+
 The main idea is to optimize the mean square error between the prediction and the original models:
 
 We aim to minimize the following objective function:
