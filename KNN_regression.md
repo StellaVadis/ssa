@@ -49,4 +49,30 @@ M(x) &= \frac{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right) \
 $$
 
 🔮 Model Inference
+Consider making prediction for the $[5]$: 
 
+|     |   $x_1$   |   $x_2$   |   $y$   |
+|-----|:---------:|:---------:|:-------:|
+| [1] |     2     |     3     |    1    |
+| [2] |     5     |     4     |    2    |
+| [3] |     9     |     6     |    3    |
+| [4] |     4     |     7     |    4    |
+| [5] |     8     |     1     |    1    |
+| [6] |     7     |     2     |    0    |
+
+$$
+\begin{align}
+& d\left(x^{[5]},x^{[1]}\right) = \left(8-2\right)^2 + \left(1-3\right)^2 = 40 \\
+& d\left(x^{[5]},x^{[2]}\right) = \left(8-5\right)^2 + \left(1-4\right)^2 = 18 \\
+& d\left(x^{[5]},x^{[3]}\right) = \left(8-9\right)^2 + \left(1-6\right)^2 = 26 \\
+& d\left(x^{[5]},x^{[4]}\right) = \left(8-4\right)^2 + \left(1-7\right)^2 = 52 \\
+\end{align}
+$$
+
+Then, we can compute that the threshold for [5]: 
+
+$$
+\begin{align}
+\delta^{[5]} = rank\_3 \left( \left[40,18,26,52 \right]^T \right)
+\end{align}
+$$
