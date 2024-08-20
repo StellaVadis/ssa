@@ -60,7 +60,7 @@ Non-parametric Model:
 
 Linear Regression:
 
-💻 [Ordinary Least Square Fit (Closed-form Solution)](https://example.com/ordinary-least-squares-closed-form)
+💻 [Ordinary Least Square Fit (Closed-form Solution)](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md)
 
 💻 [Ordinary Least Square Fit (Gradient Descent)](https://example.com/ordinary-least-squares-gradient-descent)
 
