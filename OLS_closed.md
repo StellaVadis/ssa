@@ -9,6 +9,7 @@ $$
 1. Matrix Form Representation
 Define:
 - $ \mathbf{X} $ as the design matrix, including a column of ones for the intercept:
+
   $$
   \mathbf{X} = \begin{bmatrix}
   1 & x_1^{[1]} & x_2^{[1]} & \cdots & x_p^{[1]} \\
