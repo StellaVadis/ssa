@@ -52,6 +52,7 @@ M(x) &= \frac{\sum\limits_{i=1}^{4} \mathbb{I}\left(d^{[i]} \leq \delta\right) \
 $$
 
 🔮 Model Inference
+
 Consider making prediction for the $[5]$: 
 
 $$
