@@ -55,9 +55,12 @@ $$
 ## Models and Fitting
 
 Non-parametric Model:
+
 💻 [K-Nearest Neighbors (Regression)](https://github.com/StellaVadis/ssa/blob/main/KNN_regression.md)
 
 Linear Regression:
+
 💻 [Ordinary Least Square Fit (Closed-form Solution)](https://example.com/ordinary-least-squares-closed-form)
+
 💻 [Ordinary Least Square Fit (Gradient Descent)](https://example.com/ordinary-least-squares-gradient-descent)
 
