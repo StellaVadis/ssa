@@ -21,6 +21,8 @@ We want to design such a model that can compute the predicted features with the 
 
 However, the $d$ and $K$ are hyperparameters which should be specified by the users. By specifying an appropriate $d$ and $K$, the users may get an implicit model expression. In the real application, we may use the cross-validation technique to find appropriate hyperparameters which optimizes the performance of models, which will not be discussed here.
 
+⚠️ The magnitude of each variable has a great influence on the results of the KNN algorithm; therefore, it is essential to standardize or normalize the data before applying KNN to ensure that all variables contribute equally to the distance calculations. For details about the data processing, refer to the specific chapter of data processing.
+
 # 🔍 Example 1
 📊 Available Dataset
 
