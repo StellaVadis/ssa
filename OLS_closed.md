@@ -66,7 +66,7 @@ $$
 \mathbf{X}^\top \mathbf{y} = \mathbf{X}^\top \mathbf{X} \boldsymbol{\beta}
 $$
 
-Assuming $\mathbf{X}^\top \mathbf{X}$ is invertible, the solution for $\boldsymbol{\beta}$ is:
+⚠️ If the $\mathbf{X}^\top \mathbf{X}$ is invertible, the solution for $\boldsymbol{\beta}$ is:
 
 $$
 \boldsymbol{\beta} = (\mathbf{X}^\top \mathbf{X})^{-1} \mathbf{X}^\top \mathbf{y}
@@ -74,4 +74,4 @@ $$
 
 The coefficients $\boldsymbol{\beta}$ obtained from this equation minimize the sum of squared errors, providing the best fit line for the data in the least squares sense.
 
-⚠️ If the $X^TX$ is non-invertible, then the OLS may not have a unique solution. Then you should consider using the pseudo-inverse or regularization methods like LASSO or Ridge Regression.
+⚠️ If the $X^TX$ is non-invertible, then the OLS may not have a unique solution. Then you should consider using the pseudo-inverse, gradient descent or regularization methods like LASSO or Ridge Regression.
