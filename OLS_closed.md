@@ -8,7 +8,7 @@ $$
 
 1. Matrix Form Representation
 Define:
-- $ \mathbf{X} $ as the design matrix, including a column of ones for the intercept:
+- $\mathbf{X}$ as the design matrix, including a column of ones for the intercept:
 
   $$
   \mathbf{X} = \begin{bmatrix}
