@@ -61,5 +61,5 @@ Non-parametric Model:
 
 Linear Regression:
 
-💻 [Ordinary Least Square Fit](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md) $\quad$ 💻 [Ridge Regression] $\quad$ 💻 [LASSO Regression] $\quad$ 💻 [Best L1 Fit] $\quad$ 💻 [Minimax Fit] 
+💻 [Ordinary Least Square Fit](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md) $\quad$ 💻 [Ridge Regression] $\quad$ 💻 [LASSO Regression] $\quad$ 💻 [Elastic Net Regression] $\quad$ 💻 [Best L1 Fit] $\quad$ 💻 [Minimax Fit] 
 
