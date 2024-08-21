@@ -61,15 +61,5 @@ Non-parametric Model:
 
 Linear Regression:
 
-💻 [Ordinary Least Square Fit](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md)
+💻 [Ordinary Least Square Fit](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md) $\quad$ 💻 [Ridge Regression] $\quad$ 💻 [LASSO Regression] $\quad$ 💻 [Best L1 Fit] $\quad$ 💻 [Minimax Fit] 
 
-
-## All combination Examples
-
-💻 [Data Unprocessed, K-Nearest Neighbors (Regression)]
-
-💻 [Data Unprocessed, K-Nearest Neighbors (Regression)]
-
-💻 [Data Standardization, K-Nearest Neighbors (Regression)]
-
-💻 [Data Normalization, K-Nearest Neighbors (Regression)]
