@@ -60,6 +60,10 @@ $$
 J(\boldsymbol{\beta}) = (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})^\top (\mathbf{y} - \mathbf{X} \boldsymbol{\beta}) + \lambda \boldsymbol{\beta}^\top \boldsymbol{\beta}
 $$
 
+### Algorithm to Find the Solution
+- Closed-form Solution
+- Gradient Descent
+
 ### Closed-form Solution
 
 To minimize $J(\boldsymbol{\beta})$, take the derivative with respect to $\boldsymbol{\beta}$ and set it to zero:
