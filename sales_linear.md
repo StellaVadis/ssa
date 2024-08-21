@@ -6,6 +6,15 @@ $$
 M(x_1,x_2,x_3) = 1937.964582 -5.157235 x_1 + 496.6025 x_2 + 1116.807677 x_3 
 $$ 
 
+$$
+\begin{align}
+d^{[i]} &= \left(x_1 - x_1^{[i]}\right)^2 + \left(x_2 - x_2^{[i]}\right)^2 + \left(x_3 - x_3^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
+d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[100]}\right]^T \\
+\delta &= \text{min}\_3(d) \\
+M(x_1,x_2,x_3) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
+\end{align}
+$$
+
 ----
 
 To get the model, we just use the simplest way of linear regression. Firstly, we randomly separate the dataset into train and test dataset with a ratio of 7:3. 
