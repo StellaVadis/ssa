@@ -15,10 +15,41 @@
 
 Find a model $M(\cdot)$ such that:
 
-- MAE:
-- MSE:
-- RMSE:
-- $$\left(R^2\right)$$:
+Find a model $M(\cdot)$ such that:
+
+- Mean Absolute Error (MAE):
+
+$$ 
+\begin{align}
+\text{minimize} \quad  \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right|
+\end{align}
+$$
+
+
+- Mean Squared Error (MSE):
+
+$$
+\begin{align}
+\text{minimize} \quad \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2
+\end{align}
+$$
+
+- Root Mean Squared Error (RMSE):
+
+$$
+\begin{align}
+\text{minimize} \quad \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}
+\end{align}
+$$
+
+- R-squared $$\left(R^2\right)$$:
+
+$$
+\begin{align}
+& \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y^{[i]} \\
+\text{maximize} \quad & R^2 = 1 - \frac{\sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}{\sum_{i=1}^{n} \left( y^{[i]} - \bar{y} \right)^2}
+\end{align}
+$$
 
 <table>
   <thead>
