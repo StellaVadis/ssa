@@ -1,22 +1,17 @@
+<h1 align="center">Sales Regression</h1>
 
+📊 Dataset
+- [Population Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_population.md) 
+- [Available Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_available.md)
 
-[Population Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_population.md)
+🧩 Variable Description
 
-[Available Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_available.md)
+- $x_1$: Price
+- $x_2$: Promotion
+- $x_3$: SeasonFactor
+- $y$: Sales
 
-Variable Description
-
-$x_1$: Price
-
-$x_2$: Promotion
-
-$x_3$: SeasonFactor
-
-$y$: Sales
-
-
-
-Evaluation Metrics
+📐 Evaluation Metrics
 
 Find a model $M(\cdot)$ such that:
 
