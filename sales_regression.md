@@ -15,8 +15,6 @@
 
 Find a model $M(\cdot)$ such that:
 
-Find a model $M(\cdot)$ such that:
-
 - Mean Absolute Error (MAE):
 
 $$ 
