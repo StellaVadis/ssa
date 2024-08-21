@@ -224,7 +224,7 @@ $$
 
 $$
 \begin{align}
-d^{[i]} &= \left(x_1 - x_1^{[i]}\right)^2 + \left(x_2 - x_2^{[i]}\right)^2 + \left(x_3 - x_3^{[i]}\right)^2, \quad i = 1,2,\cdots, n \\
+d^{[i]} &= \left( \frac{x_1 - x_1^{[i]}}{117.412855} \right)^2 + \left(\frac{x_2 - x_2^{[i]}}{0.501757}\right)^2 + \left(\frac{x_3 - x_3^{[i]}}{0.163831}\right)^2, \quad i = 1,2,\cdots, n \\
 d &= \left[d^{[1]}, d^{[2]}, \cdots, d^{[100]}\right]^T \\
 \delta &= \text{min}\_3(d) \\
 M(x_1,x_2,x_3) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{[i]}}{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta)}
@@ -232,3 +232,47 @@ M(x_1,x_2,x_3) &= \frac{\sum_{i=1}^{m} \mathbb{I}(d^{[i]} \leq \delta) \cdot y^{
 $$
 
 ----
+
+
+We select $K=3$ and $d(x,x') = ||x-x'||^2$. We keep the same dataset split as in the linear regression model.
+
+Also, we standardize the features by:
+
+$$
+\begin{align}
+z_1 = \frac{x_1 - \mu_1}{\sigma_1}, \quad \text{where} \quad \mu_1 = \frac{1}{100}\sum_{i=1}^{100}x_1^{[i]}, \quad \sigma_1 = \sqrt{\frac{1}{100}\sum_{i=1}^{100} \left(x_1^{[i]} - \mu_1\right)^2} \\
+z_2 = \frac{x_2 - \mu_2}{\sigma_2}, \quad \text{where} \quad \mu_2 = \frac{1}{100}\sum_{i=1}^{100}x_2^{[i]}, \quad \sigma_2 = \sqrt{\frac{1}{100}\sum_{i=1}^{100} \left(x_2^{[i]} - \mu_2\right)^2} \\
+z_3 = \frac{x_3 - \mu_3}{\sigma_3}, \quad \text{where} \quad \mu_3 = \frac{1}{100}\sum_{i=1}^{100}x_3^{[i]}, \quad \sigma_3 = \sqrt{\frac{1}{100}\sum_{i=1}^{100} \left(x_3^{[i]} - \mu_3\right)^2}
+\end{align}
+$$
+
+at here we round the $\sigma_1, \sigma_2, \sigma_3$ to 6 decimal points.
+
+Then we can apply the KNN algorithm to it.
+
+Training set indices: Int64Index([ 12,  48,  86,  29,  94,   6,  67,  66,  36,  17,  50,  35,   8,
+             96,  28,  20,  82,  26,  63,  14,  25,   4,  18,  39,   9,  79,
+              7,  65,  37,  90,  57, 100,  55,  44,  51,  68,  47,  69,  62,
+             98,  80,  42,  59,  49,  99,  58,  76,  33,  95,  60,  64,  85,
+             38,  30,   2,  53,  22,   3,  24,  88,  92,  75,  87,  83,  21,
+             61,  72,  15,  93,  52],
+           dtype='int64')
+Test set indices: Int64Index([84, 54, 71, 46, 45, 40, 23, 81, 11,  1, 19, 31, 74, 34, 91,  5, 77,
+            78, 13, 32, 56, 89, 27, 43, 70, 16, 41, 97, 10, 73],
+           dtype='int64')
+
+           
+Training Set MAD: 83.95796952380954 \
+Training Set MSE: 11696.233783796577 \
+Training Set RMSE: 108.14912752212372 \
+Training Set R-squared: 0.9713132015763644 \
+Test Set MAD: 172.67858666666672\
+Test Set MSE: 47159.16804325623\
+Test Set RMSE: 217.16161733431676\
+Test Set R-squared: 0.9094522829075513\
+Population MAD: 152.85791896\
+Population MSE: 38045.911329152754\
+Population RMSE: 195.05361142299506\
+Population R-squared: 0.9269704185623958
+
+We can see that the population metrics is almost the same as the test metrics.
