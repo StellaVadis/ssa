@@ -87,6 +87,9 @@ In this update:
 2. **Iteratively update** each $\beta_j$ using the coordinate descent update rule.
 3. **Repeat** until convergence, which is typically determined when the changes in $\boldsymbol{\beta}$ are below a specified tolerance level.
 
+### Proof: The algorithm can approximates the optimal solution of optimization problem
+
+
 ### Summary
 
 LASSO Regression adds an L1 regularization term to the least squares objective, which encourages sparsity in the model coefficients. Due to the non-differentiability of the L1 norm, coordinate descent is used to find the optimal coefficients. This method updates each coefficient iteratively, making it possible to handle the sparsity-inducing penalty effectively.
