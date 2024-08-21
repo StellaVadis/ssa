@@ -11,9 +11,15 @@
 - $x_3$: SeasonFactor
 - $y$: Sales
 
-📐 Evaluation Metrics
+🚀 Model
 
-Find a model $M(\cdot)$ such that:
+$$
+\begin{align}
+M(x_1,x_2,x_3)
+\end{align}
+$$
+
+📐 Evaluation Metrics
 
 - Mean Absolute Error (MAE):
 
