@@ -26,3 +26,19 @@ $\beta = (X^TX)^{-1}X^Ty$, and round the result into 6 decimal points, which yie
 $$
 M(x_1,x_2,x_3) = 1937.964582 -5.157235 x_1 + 496.6025 x_2 + 1116.807677 x_3
 $$
+
+We also compute the evaluation metrics:\
+Training Set MAD: 72.18050734762957\
+Training Set MSE: 8340.06694071241\
+Training Set RMSE: 91.32396695672178\
+Training Set R-squared: 0.979544712974249\
+Test Set MAD: 74.77093912630646\
+Test Set MSE: 8689.619505183051\
+Test Set RMSE: 93.21812862948414\
+Test Set R-squared: 0.9833155409384102\
+Population MAD: 83.3727744983166\
+Population MSE: 10883.980736279285\
+Population RMSE: 104.32631852164288\
+Population R-squared: 0.9791080689152433
+
+⚠ Population Metrics are invisible to users. We can compute it because this is artificial dataset
