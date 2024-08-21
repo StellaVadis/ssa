@@ -41,7 +41,7 @@ Find a model $M(\cdot)$ such that:
   </thead>
   <tbody>
     <tr>
-      <td>Linear Regression</td>
+      <td><a href="https://github.com/StellaVadis/ssa/blob/main/sales_linear.md">Linear Regression</a></td>
       <td>83.3728</td>
       <td>10883.9807</td>
       <td>104.3263</td>
@@ -52,7 +52,7 @@ Find a model $M(\cdot)$ such that:
       <td>0.9833</td>
     </tr>
     <tr>
-      <td>Standardized KNN</td>
+      <td><a href="https://github.com/StellaVadis/ssa/blob/main/sales_knn.md">Standardized KNN</a></td>
       <td>152.8579</td>
       <td>38045.9113</td>
       <td>195.0536</td>
@@ -86,6 +86,7 @@ Find a model $M(\cdot)$ such that:
     </tr>
   </tbody>
 </table>
+
 
 
 
