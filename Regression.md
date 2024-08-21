@@ -61,5 +61,16 @@ Non-parametric Model:
 
 Linear Regression:
 
-💻 [Ordinary Least Square Fit](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md) $\quad$ 💻 [Ridge Regression] $\quad$ 💻 [LASSO Regression] $\quad$ 💻 [Elastic Net Regression] $\quad$ 💻 [Best L1 Fit] $\quad$ 💻 [Minimax Fit] 
+| Name                    | Other Name      | Link |
+|:-------------------------:|:------------------:|:------:|
+| Ordinary Least Squares Fit | Linear regression in typical sense             |[💻](https://github.com/StellaVadis/ssa/blob/main/OLS_closed.md)|
+| Ridge Regression        | $L_2$ Norm Minimization with $L_2$ Regularization |
+| LASSO Regression        | $L_2$ Norm Minimization with $L_1$ Regularization |
+| Elastic Net Regression  | $L_2$ Norm Minimization with $L_1$ & $L_2$ Regularization |
+| Best $L_1$ Fit          | $L_1$ Norm Minimization |
+| Minimax Fit             | $L_{\infty}$ Norm Minimization |
+
+
+
+
 
