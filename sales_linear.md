@@ -8,11 +8,6 @@ $$
 
 ----
 
-<div style="background-color: lightgray; padding: 10px; border-radius: 5px;">
-  这是一个带灰色背景的文本块。
-</div>
-
-
 To get the model, we just use the simplest way of linear regression. Firstly, we randomly separate the dataset into train and test dataset with a ratio of 7:3. 
 
 - Train Indices: 12,  48,  86,  29,  94,   6,  67,  66,  36,  17,  50,  35,   8,
