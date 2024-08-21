@@ -1,8 +1,10 @@
 <h1 align="center">Sales Regression</h1>
 
+----
 📊 Dataset
 - [Population Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_population.md) 
 - [Available Dataset](https://github.com/StellaVadis/ssa/edit/main/sales_available.md)
+----
 
 🧩 Variable Description
 
@@ -10,6 +12,7 @@
 - $x_2$: Promotion
 - $x_3$: SeasonFactor
 - $y$: Sales
+----
 
 🚀 Model
 
@@ -18,6 +21,8 @@ $$
 M(x_1,x_2,x_3)
 \end{align}
 $$
+
+----
 
 📐 Evaluation Metrics
 
@@ -54,6 +59,10 @@ $$
 \text{maximize} \quad & R^2 = 1 - \frac{\sum_{i=1}^{n} \left( M\left(x_1^{[i]}, x_2^{[i]}, \cdots, x_d^{[i]} \right) - y^{[i]} \right)^2}{\sum_{i=1}^{n} \left( y^{[i]} - \bar{y} \right)^2}
 \end{align}
 $$
+
+----
+
+🎯 Model Performance
 
 <table>
   <thead>
@@ -121,6 +130,6 @@ $$
   </tbody>
 </table>
 
-
+----
 
 
