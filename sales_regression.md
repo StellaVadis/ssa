@@ -52,15 +52,15 @@ Find a model $M(\cdot)$ such that:
       <td>0.9833</td>
     </tr>
     <tr>
-      <td>Model 2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>Standardized KNN</td>
+      <td>152.8579</td>
+      <td>38045.9113</td>
+      <td>195.0536</td>
+      <td>0.9270</td>
+      <td>172.6786</td>
+      <td>47159.1680</td>
+      <td>217.1616</td>
+      <td>0.9095</td>
     </tr>
     <tr>
       <td>Model 3</td>
