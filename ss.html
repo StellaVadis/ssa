@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            table-layout: auto;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+            word-wrap: break-word;
+            box-sizing: border-box;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            white-space: normal;
+        }
+
+        #controls-container {
+            width: 95%;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        #controls-container input, #controls-container button, #controls-container select {
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        .pagination-container {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .pagination-container button {
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        #footer {
+            margin-top: auto;
+            text-align: center;
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+
+<table id="data-table">
+    <thead>
+        <!-- Table headers will be inserted here -->
+    </thead>
+    <tbody>
+        <!-- Table body will be inserted here -->
+    </tbody>
+</table>
+
+<!-- Controls and pagination buttons -->
+<div id="controls-container">
+    <div id="search-container">
+        <label for="search-column">Search Column Name: </label>
+        <input type="text" id="search-column" placeholder="Enter column name...">
+        <button onclick="searchColumn()">Search Column</button>
+
+        <label for="column-select" style="margin-left: 20px;">Select Column: </label>
+        <select id="column-select" onchange="selectColumn()"></select>
+
+        <label for="search-row" style="margin-left: 20px;">Search Row Index: </label>
+        <input type="number" id="search-row" placeholder="Enter row index...">
+        <button onclick="searchRow()">Search Row</button>
+    </div>
+
+    <div class="pagination-container" id="row-pagination-container">
+        <button onclick="loadPreviousPage()">Previous Rows</button>
+        <button onclick="loadNextPage()">Next Rows</button>
+    </div>
+
+    <div class="pagination-container" id="column-pagination-container">
+        <button onclick="loadPreviousColumns()">Previous Columns</button>
+        <button onclick="loadNextColumns()">Next Columns</button>
+    </div>
+</div>
+
+<div id="footer">
+    <!-- Footer content here -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script>
+    const csvUrl = 'https://raw.githubusercontent.com/StellaVadis/ssa/main/full_sales_data.csv';
+    const rowsPerPage = 10;
+    const columnsPerPage = 15;
+
+    let data = [];
+    let columnNames = [];
+    let currentRowPage = 0;
+    let currentColumnPage = 0;
+
+    function loadCSV() {
+        Papa.parse(csvUrl, {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                data = results.data;
+                columnNames = results.meta.fields;
+                console.log('Data loaded:', data); // Debugging line
+                populateColumnSelect();
+                loadRowsAndColumns();
+            }
+        });
+    }
+
+    function populateColumnSelect() {
+        const columnSelect = document.getElementById('column-select');
+        columnSelect.innerHTML = '';
+
+        columnNames.forEach((name, index) => {
+            const option = document.createElement('option');
+            option.value = index;
+            option.textContent = name;
+            columnSelect.appendChild(option);
+        });
+    }
+
+    function loadRowsAndColumns() {
+        loadTableHeader();
+        loadTableBody();
+    }
+
+    function loadTableHeader() {
+        const nameHeaderRow = $('#data-table thead');
+        nameHeaderRow.empty();
+
+        const headerRow = $('<tr></tr>');
+        headerRow.append('<th>Index</th>');
+
+        const startColumn = currentColumnPage * columnsPerPage;
+        const endColumn = Math.min(startColumn + columnsPerPage, columnNames.length);
+
+        for (let j = startColumn; j < endColumn; j++) {
+            headerRow.append(`<th>${columnNames[j]}</th>`);
+        }
+
+        nameHeaderRow.append(headerRow);
+    }
+
+    function loadTableBody() {
+        const tbody = $('#data-table tbody');
+        tbody.empty();
+
+        const startRow = currentRowPage * rowsPerPage;
+        const endRow = Math.min(startRow + rowsPerPage, data.length);
+
+        const startColumn = currentColumnPage * columnsPerPage;
+        const endColumn = Math.min(startColumn + columnsPerPage, columnNames.length);
+
+        for (let i = startRow; i < endRow; i++) {
+            const row = $('<tr></tr>');
+            row.append(`<td>[${i + 1}]</td>`);
+            for (let j = startColumn; j < endColumn; j++) {
+                const value = data[i][columnNames[j]];
+                row.append(`<td>${value === 0 ? '0' : value || ''}</td>`); // Ensure 0 is displayed
+            }
+            tbody.append(row);
+        }
+    }
+
+    function loadNextPage() {
+        if ((currentRowPage + 1) * rowsPerPage < data.length) {
+            currentRowPage++;
+            loadRowsAndColumns();
+        }
+    }
+
+    function loadPreviousPage() {
+        if (currentRowPage > 0) {
+            currentRowPage--;
+            loadRowsAndColumns();
+        }
+    }
+
+    function loadNextColumns() {
+        const maxColumnPage = Math.ceil(columnNames.length / columnsPerPage) - 1;
+        if (currentColumnPage < maxColumnPage) {
+            currentColumnPage++;
+            loadRowsAndColumns();
+        }
+    }
+
+    function loadPreviousColumns() {
+        if (currentColumnPage > 0) {
+            currentColumnPage--;
+            loadRowsAndColumns();
+        }
+    }
+
+    function searchColumn() {
+        const searchName = $('#search-column').val().trim().toLowerCase();
+        const columnIndex = columnNames.findIndex(name => name.toLowerCase() === searchName);
+
+        if (columnIndex === -1) {
+            alert('Column name not found');
+            return;
+        }
+
+        currentColumnPage = Math.floor(columnIndex / columnsPerPage);
+        loadRowsAndColumns();
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+
+    function selectColumn() {
+        const selectedColumnIndex = parseInt($('#column-select').val());
+
+        if (isNaN(selectedColumnIndex)) {
+            alert('Invalid selection');
+            return;
+        }
+
+        currentColumnPage = Math.floor(selectedColumnIndex / columnsPerPage);
+        loadRowsAndColumns();
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+
+    function searchRow() {
+        const searchIndex = parseInt($('#search-row').val().trim());
+
+        if (isNaN(searchIndex) || searchIndex < 1 || searchIndex > data.length) {
+            alert('Row index out of range');
+            return;
+        }
+
+        currentRowPage = Math.floor((searchIndex - 1) / rowsPerPage);
+        loadRowsAndColumns();
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+
+    // Initialize
+    loadCSV();
+</script>
+
+</body>
+</html>
